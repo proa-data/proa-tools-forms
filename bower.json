@@ -1,0 +1,33 @@
+{
+  "name": "proa-tools-forms",
+  "version": "1.0.0",
+  "description": "Management of Bootstrap forms.",
+  "main": "./dist/proa-tools-forms.css",
+  "authors": [
+    "Miquel Alejandro Vicens Dalmau <mvicens@proadata.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "bootstrap"
+  ],
+  "homepage": "https://github.com/proa-data/proa-tools-forms",
+  "ignore": [
+    ".gitignore",
+    "package.json",
+    "package-lock.json",
+    "gulpfile.js",
+    "demo/"
+  ],
+  "dependencies": {
+    "bootstrap": ">3.3.7",
+    "jquery": "^3.3.1",
+    "angular": "^1.7.5"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css"
+      ]
+    }
+  }
+}
