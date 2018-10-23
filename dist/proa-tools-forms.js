@@ -1,5 +1,5 @@
 /*!
- * Proa Tools Forms v1.0.0 (https://github.com/proa-data/proa-tools-forms)
+ * Proa Tools Forms v1.0.1 (https://github.com/proa-data/proa-tools-forms)
  */
 
 ( function() {
