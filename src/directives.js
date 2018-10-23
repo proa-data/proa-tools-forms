@@ -16,7 +16,7 @@ function formGroup() {
 			var input = iElement.find( '.form-control, input[type="file"]' ),
 				id = input.prop( 'id' );
 			if ( !id ) {
-				id = 'form-group-input-' + n++;
+				id = 'form-control-' + n++;
 				input.prop( 'id', id );
 			}
 			iElement.find( 'label' ).prop( 'for', id );
