@@ -1,6 +1,6 @@
 {
   "name": "proa-tools-forms",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Management of Bootstrap forms.",
   "main": "./dist/proa-tools-forms.js",
   "authors": [

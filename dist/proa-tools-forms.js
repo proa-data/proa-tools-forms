@@ -1,5 +1,5 @@
 /*!
- * Proa Tools Forms v1.0.5 (https://github.com/proa-data/proa-tools-forms)
+ * Proa Tools Forms v1.0.6 (https://github.com/proa-data/proa-tools-forms)
  */
 
 ( function() {
@@ -20,13 +20,15 @@ function formGroup() {
 
 	function compile() {
 		return function( scope, iElement ) {
-			var input = iElement.find( '.form-control, input[type="file"]' ),
-				id = input.prop( 'id' );
-			if ( !id ) {
-				id = 'form-control-' + n++;
-				input.prop( 'id', id );
+			var input = iElement.find( '.form-control, input[type="file"], .form-check-input' );
+			if ( input.length ) {
+				var id = input.prop( 'id' );
+				if ( !id ) {
+					id = 'form-control-' + n++;
+					input.prop( 'id', id );
+				}
+				iElement.find( 'label' ).prop( 'for', id );
 			}
-			iElement.find( 'label' ).prop( 'for', id );
 		};
 	}
 }
