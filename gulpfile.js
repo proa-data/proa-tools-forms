@@ -16,7 +16,7 @@ const paths = {
 gulp.task('del:dist', () => delFolder(paths.dist));
 
 gulp.task('scripts:copy', () => processJs());
-gulp.task('scripts:min', () => processJs((stream) => stream.pipe($.ngAnnotate()).pipe($.uglify()).pipe($.rename({suffix: '.min'}))));
+gulp.task('scripts:min', () => processJs((stream) => stream.pipe($.ngAnnotate()).pipe($.uglify({output: {comments: '/^!/'}})).pipe($.rename({suffix: '.min'}))));
 gulp.task('scripts', ['scripts:copy', 'scripts:min']);
 
 gulp.task('build', gulpSync.sync([
