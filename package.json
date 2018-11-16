@@ -1,6 +1,6 @@
 {
   "name": "proa-tools-forms",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Management of Bootstrap forms.",
   "main": "gulpfile.js",
   "scripts": {
@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/proa-data/proa-tools-forms/issues"
   },
-  "homepage": "https://github.com/proa-data/proa-tools-forms#readme",
+  "homepage": "https://github.com/proa-data/proa-tools-forms",
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
