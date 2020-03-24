@@ -1,5 +1,5 @@
 /*!
- * Proa Tools Forms v1.1.5 (https://github.com/proa-data/proa-tools-forms)
+ * Proa Tools Forms v1.1.6 (https://github.com/proa-data/proa-tools-forms)
  */
 
 ( function() {
@@ -28,6 +28,12 @@ function formGroup() {
 					input.prop( 'id', id );
 				}
 				iElement.find( 'label' ).prop( 'for', id );
+
+				var name = input.prop( 'name' );
+				if ( !name ) {
+					name = input.attr( 'ng-model' );
+					input.prop( 'name', name ? _.kebabCase( name ) : id );
+				}
 			}
 		};
 	}

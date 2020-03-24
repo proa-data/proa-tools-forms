@@ -21,6 +21,12 @@ function formGroup() {
 					input.prop( 'id', id );
 				}
 				iElement.find( 'label' ).prop( 'for', id );
+
+				var name = input.prop( 'name' );
+				if ( !name ) {
+					name = input.attr( 'ng-model' );
+					input.prop( 'name', name ? _.kebabCase( name ) : id );
+				}
 			}
 		};
 	}
