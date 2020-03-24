@@ -1,7 +1,7 @@
 {
   "name": "proa-tools-forms",
   "description": "Management of Bootstrap forms.",
-  "main": "./dist/proa-tools-forms.js",
+  "main": "dist/proa-tools-forms.js",
   "authors": [
     "Miquel Alejandro Vicens Dalmau <mvicens@proadata.com>"
   ],
