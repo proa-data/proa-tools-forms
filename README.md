@@ -4,7 +4,7 @@ Management of Bootstrap forms.
 
 ## Installation
 
-```powershell
+```bash
 bower install proa-tools-forms
 ```
 
