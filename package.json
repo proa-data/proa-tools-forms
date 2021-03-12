@@ -1,6 +1,6 @@
 {
   "name": "proa-tools-forms",
-  "version": "1.1.12",
+  "version": "1.1.13",
   "description": "Management of Bootstrap forms.",
   "main": "gulpfile.js",
   "scripts": {
