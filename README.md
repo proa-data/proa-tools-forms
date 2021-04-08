@@ -10,11 +10,11 @@ bower install proa-tools-forms
 
 ## Usage
 
-There are one funcionality (AngularJS directive) and one CSS design (class name built into Bootstrap 3):
+There are one functionality (AngularJS directive) and one CSS design (class name built into Bootstrap 3):
 
 ### Automatic labelling
 
-Forms `label`s are automatically relates (throught the `for` attribute) with its `input`. It is not necessary an extra adding. So, keep Bootstrap tags as normally.
+Labelable elements are automatically associated. It is not necessary any extra adding. So, keep Bootstrap's tags as normally without related attributes (`label`s' `for` and controls' ID).
 
 ### Flex forms
 
