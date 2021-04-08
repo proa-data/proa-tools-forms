@@ -1,7 +1,10 @@
 {
   "name": "proa-tools-forms",
   "description": "Management of Bootstrap forms.",
-  "main": "dist/proa-tools-forms.js",
+  "main": [
+    "src/less/index.less",
+    "dist/proa-tools-forms.js"
+  ],
   "authors": [
     "Miquel Alejandro Vicens Dalmau <mvicens@proadata.com>"
   ],
@@ -18,16 +21,14 @@
     "demo/"
   ],
   "dependencies": {
-    "bootstrap": ">=3",
+    "bootstrap": "^3.4.1",
     "jquery": "^3.4.1",
     "angular": "^1.7.9",
     "lodash": "^4.17.15"
   },
   "overrides": {
     "bootstrap": {
-      "main": [
-        "dist/css/bootstrap.css"
-      ]
+      "main": "less/bootstrap.less"
     }
   }
 }
