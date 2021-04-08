@@ -1,10 +1,3 @@
-/*!
- * Proa Tools Forms v2.0.0 (https://github.com/proa-data/proa-tools-forms)
- */
-
-( function() {
-angular.module( 'proaTools.forms', [] );
-} )();
 ( function() {
 angular
 	.module( 'proaTools.forms' )

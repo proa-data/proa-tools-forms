@@ -1,0 +1,47 @@
+//
+// Forms
+// --------------------------------------------------
+
+
+// Flex forms
+
+.form-flex {
+	display: flex;
+	flex-wrap: wrap;
+	@gutter: @grid-gutter-width;
+	margin-right: floor((@gutter / -2));
+	margin-left: ceil((@gutter / -2));
+	> .form-group,
+	> .checkbox,
+	> .radio,
+	> button {
+		flex: 0 0 auto;
+		width: auto;
+		max-width: 100%;
+		align-self: flex-start;
+	}
+	> .form-group,
+	> .checkbox,
+	> .radio {
+		padding-right: floor((@gutter / 2));
+		padding-left: ceil((@gutter / 2));
+	}
+	> .checkbox,
+	> .radio {
+		margin-top: 0;
+	}
+	> button {
+		margin-right: floor((@gutter / 2));
+		margin-left: ceil((@gutter / 2));
+		margin-bottom: @form-group-margin-bottom;
+		&:not(:last-child) {
+			margin-right: 0;
+		}
+	}
+	> .form-group + button {
+		&,
+		& ~ button {
+			margin-top: (@line-height-computed + 5px);
+		}
+	}
+}
