@@ -19,7 +19,7 @@ function formGroup() {
 	};
 
 	function compile( tElement ) {
-		var input = tElement.find( '.form-control, input[type="file"], .form-check-input' );
+		var input = tElement.find( '.form-control, input[type="file"]' );
 		if ( input.length ) {
 			var id = input.prop( 'id' );
 			if ( !id ) {
